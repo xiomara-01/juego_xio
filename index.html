@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Secreto de Xiomara</title>
+    <style>
+        body { background-color: #111; color: white; font-family: sans-serif; text-align: center; padding-top: 100px; }
+        button { background-color: #2ea043; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenido al Juego del Número Secreto de Xiomara!</h1>
+    <button onclick="jugar()">Comenzar a Jugar</button>
+    <script>
+        function jugar() {
+            let numeroSecreto = 6;
+            let numeroUsuario = prompt("Me indicas un número del 1 al 10 por favor:");
+            if (numeroUsuario == numeroSecreto) {
+                alert("¡Acertaste! 🎉");
+            } else {
+                alert("¡Casi! Intenta otra vez ❌");
+            }
+        }
+    </script>
+</body>
+</html>
